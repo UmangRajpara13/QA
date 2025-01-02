@@ -1,0 +1,35 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample App</title>
+</head>
+<body>
+    <h1>Welcome to the Sample App</h1>
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" name="username" placeholder="Username" />
+        <input type="password" name="password" placeholder="Password" />
+        <button id="loginButton">Login</button>
+    </div>
+    <div id="dashboard" style="display:none;">
+        <h2>Dashboard</h2>
+        <p id="welcomeMessage">Welcome to your dashboard!</p>
+    </div>
+
+    <script>
+        document.getElementById('loginButton').onclick = function() {
+            const username = document.querySelector('input[name="username"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+            if (username === 'testuser' && password === 'password') {
+                document.getElementById('login').style.display = 'none';
+                document.getElementById('dashboard').style.display = 'block';
+            } else {
+                alert('Invalid credentials');
+            }
+        };
+    </script>
+</body>
+</html>

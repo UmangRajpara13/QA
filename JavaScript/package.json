@@ -1,0 +1,17 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Umang",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.27.0"
+  }
+}
